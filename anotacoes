@@ -1,0 +1,72 @@
+/* Criar estilo para a página */ body 
+/* Estilo para a seção principal */  section
+Estilo para artigos  article
+Estilo para titulo h2
+
+
+/* Estilo para artigos */
+
+article{
+    background-color: #f5d3f3;
+    border: 1px solid #f04ae7:
+    border-radius: 8px;
+    padding: 20px;
+}
+
+main class
+
+.content {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo Semântico</title>
+        <link rel="stylesheet" href="style.css">
+    </head> 
+    <body>
+        <header>
+            <h1>Nome do Site</h1>
+            <nav>
+                <a href="#home">Início</a>
+                <a href="#blog">Blog</a>
+            </nav>
+        </header>
+
+        <main class ="content">
+            <section id="blog">
+                <h2>Últimos Artigos</h2>
+                <article>
+                 </article>
+                 <article class="cartao-perfil">
+                 <h2 class-"cartao-titulo">Desenvolvedor Back-and<h2/>
+                 <p class="cartao-subititulo">Especialista em APIs e Banco de Dados
+                 </p>
+                 <p class="cartao-descricao">Responsável pela arquitetyra de microsseriviços
+                 </p>
+                 <div class="cartao-status">Disponivel para Projetos
+                 </div>
+                 </article>
+
+
+
+                    <h3>Título da Postagem</h3>
+                    <p>Texto do primeiro parágrafo da publicação.</p>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 Meu Site. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>

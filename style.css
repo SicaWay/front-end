@@ -1,0 +1,55 @@
+/* Criar estilo para a página */
+body {
+font-family: 'Arial', sans-serif;
+background-color: #ff7cbc;
+margin: 5px;
+padding: 5px;
+}
+
+/* Estilo para a seção principal */
+section {
+    background-color: #f5d3f3;
+    border: 1px solid #f5d3f3;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+/* Estilo para artigos */
+article{
+    background-color: #f7bdf3;
+    border: 1px solid #f7bdf3;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;   /* Espaçamento entre os dois blocos de texto */
+}
+
+/*Estilo para cabeçalho*/
+header {
+    background-color: #e0caeb;
+    border: 1px solid #e0caeb;
+     border-radius: 10px;
+     padding: 20px;
+     text-align: center;
+}
+
+/*Estilo para titulo */
+h2 {
+    color: #333333;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+/*Texto cetralizado*/
+h1 {
+    text-align: center;
+}
+/* Estilo de alinhamento com Flexbox */
+.content {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
