@@ -1,55 +1,125 @@
-/* Criar estilo para a página */
-body {
-font-family: 'Arial', sans-serif;
-background-color: #ff7cbc;
-margin: 5px;
-padding: 5px;
+/*  Plano de fundo */
+
+.background-img {
+    position: fixed;   /* Fixa a imagem na tela para ela não rolar junto com a página */
+    top: 0;
+    left: 0;
+    width: 100vw;      /* Ocupa 100% da largura da janela */
+    height: 100vh;     /* Ocupa 100% da altura da janela */
+    object-fit: cover; /* Faz a imagem cobrir tudo sem distorcer as proporções */
+    z-index: -1;       /* Joga a imagem para trás de todo o conteúdo do site */
 }
 
-/* Estilo para a seção principal */
+/* --- ESTILO DA PÁGINA (Centralizando todos os blocos) --- */
+body {
+    font-family: 'Coolvetica Rg Cond', 'Arial', sans-serif;
+    background-color: #ff7cbc; 
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px;
+
+/* --- GARANTINDO LARGURA PADRÃO PARA OS BLOCOS FICAREM CENTRALIZADOS --- */
+header, .content, footer {
+    width: 100%;
+    max-width: 600px; /* Define um limite de largura para os blocos não esticarem demais */
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+/* --- ESTILO PARA O CABEÇALHO --- */
+header {
+    background-color: #e0caeb;
+    border: 1px solid #e0caeb;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: #333333; /* Ajustado para legibilidade no fundo claro */
+}
+
+/* --- ESTILO PARA TÍTULO PRINCIPAL --- */
+h1 {
+    text-align: center;
+    font-family: 'Arco', sans-serif;
+}
+
+/* --- ESTILO DE ALINHAMENTO COM FLEXBOX (MAIN) --- */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+/* --- ESTILO PARA A SEÇÃO PRINCIPAL --- */
 section {
     background-color: #f5d3f3;
     border: 1px solid #f5d3f3;
     border-radius: 10px;
     padding: 20px;
-
+    width: 100%;
+    box-sizing: border-box;
 }
 
-/* Estilo para artigos */
-article{
+/* --- ESTILO PARA ARTIGOS --- */
+article {
     background-color: #f7bdf3;
     border: 1px solid #f7bdf3;
     border-radius: 10px;
     padding: 20px;
-    margin-bottom: 20px;   /* Espaçamento entre os dois blocos de texto */
+    margin-bottom: 20px;
+    color: #333333;
 }
 
-/*Estilo para cabeçalho*/
-header {
-    background-color: #e0caeb;
-    border: 1px solid #e0caeb;
-     border-radius: 10px;
-     padding: 20px;
-     text-align: center;
-}
-
-/*Estilo para titulo */
+/* --- ESTILO PARA TÍTULOS SECUNDÁRIOS --- */
 h2 {
     color: #333333;
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
+    font-family: 'Coolvetica Rg Cond', 'Arial', sans-serif;
+    font-size: 18px;
     margin-bottom: 12px;
 }
 
-/*Texto cetralizado*/
-h1 {
-    text-align: center;
+/* --- CARTÃO DE PERFIL --- */
+.cartao-perfil {
+    background-color: #f7bdf3;
+    padding: 24px;
+    border: 1px solid #f7bdf3;
+    border-radius: 12px;
 }
-/* Estilo de alinhamento com Flexbox */
-.content {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+
+.cartao-titulo {
+    font-size: 1.5rem; /* Corrigido de :1.5rem para 1.5rem */
+    font-weight: 700;
+}
+
+.cartao-subtitulo {
+    color: #333333;
+    font-weight: 600;
+}
+
+/* Correção: Adicionado o ponto (.) que faltava na classe */
+.cartao-descricao {
+    color: #333333;
+}
+
+/* Correção: Adicionado o ponto (.) e ajustado o rgba com valores reais */
+.cartao-status {
+    color: #333333;
+    background-color: rgba(255, 255, 255, 0.3); 
+    text-transform: uppercase;
+    border-radius: 99px;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* --- RODAPÉ --- */
+footer {
+    text-align: center;
+    font-size: 14px;
 }
